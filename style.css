@@ -1,0 +1,151 @@
+/** CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ **/
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+/* Reset over */
+
+
+:root{
+--White: hsl(0, 0%, 100%);
+
+--Stone-100: hsl(30, 54%, 90%);
+--Stone-150: hsl(30, 18%, 87%);
+--Stone-600: hsl(30, 10%, 34%);
+--Stone-900: hsl(24, 5%, 18%);
+
+--Brown-800: hsl(14, 45%, 36%);
+
+--Rose-800: hsl(332, 51%, 32%);
+--Rose-50: hsl(330, 100%, 98%);
+}
+
+body{
+    background-color: var(--Stone-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: "Outfit", sans-serif;
+    font-size: small;
+    font-weight: 400;
+    font-style: normal;
+
+    color: var(--Stone-600);
+
+    padding: 5rem;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    background-color: white;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    border-radius: 15px;
+    justify-content: center;
+    min-height: fit-content;
+}
+
+.container div h1,h2{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+    color: var(--Brown-800);
+}
+
+h1{
+  color: palegreen;
+}
+
+img{
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+div{
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.pink-section{
+    background-color: var(--Rose-50);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pink-section h3{
+    color: var(--Rose-800);
+    margin-bottom: 5px;
+}
+
+ul, ol{
+
+  padding-left: 20px;
+  
+}
+
+li span{
+  font-weight: 800;
+  color: var(--Stone-600  );
+  
+}
+
+li{
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+
+
+.container>div>h1{
+  color: black;
+}
+
+.border-bottom{
+  border-bottom: 1px solid rgb(233, 233, 233)
+}
+
+.no-point-list{
+  margin-top: 1.25rem;
+  /* background-color: bisque; */
+  list-style: none;
+}
+
+.no-point-list>li{
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.no-point-list>li:last-child{
+  border: 0;
+  padding-bottom: 0;
+}
